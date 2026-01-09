@@ -1,0 +1,7 @@
+{
+  "name": "gui",
+  "library": false,
+  "commands": {
+    "lint": "eslint ."
+  }
+}
