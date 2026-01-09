@@ -8,6 +8,10 @@ dist/
 electron/dist/
 *.tsbuildinfo
 
+# Generated type definition files
+**/*.d.ts
+!node_modules/**/*.d.ts
+
 # Environment
 .env
 .env.local
@@ -52,3 +56,6 @@ coverage/
 packages/
 pnpm-workspace.yaml
 baseline.json
+*.md
+!.gitignore
+!README.md
