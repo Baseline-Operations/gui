@@ -1,0 +1,60 @@
+{
+	"name": "baseline-monorepo",
+	"version": "0.1.0",
+	"private": true,
+	"repos": [
+		{
+			"name": "core",
+			"gitUrl": "https://github.com/your-org/baseline.git",
+			"defaultBranch": "main",
+			"path": "packages/core",
+			"tags": ["library"],
+			"languages": ["node"],
+			"library": true
+		},
+		{
+			"name": "cli",
+			"gitUrl": "https://github.com/your-org/baseline.git",
+			"defaultBranch": "main",
+			"path": "packages/cli",
+			"tags": ["app"],
+			"languages": ["node"]
+		},
+		{
+			"name": "gui",
+			"gitUrl": "https://github.com/your-org/baseline.git",
+			"defaultBranch": "main",
+			"path": "packages/gui",
+			"tags": ["app"],
+			"languages": ["node"]
+		}
+	],
+	"languages": {
+		"node": {
+			"displayName": "Node.js/TypeScript",
+			"toolchain": [
+				{
+					"name": "node",
+					"versionPolicy": {
+						"min": "20.0.0"
+					}
+				},
+				{
+					"name": "typescript",
+					"versionPolicy": {
+						"min": "5.0.0"
+					}
+				}
+			]
+		}
+	},
+	"packageManagers": {
+		"default": "pnpm"
+	},
+	"github": {
+		"provider": "github",
+		"useGhCli": true,
+		"defaultBaseBranch": "main"
+	},
+	"editor": ["vscode", "cursor"]
+}

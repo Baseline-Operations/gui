@@ -1,0 +1,14 @@
+{
+	"packages": ["packages/core", "packages/cli", "packages/gui"],
+	"languages": {
+		"node": ">=20.0.0",
+		"typescript": ">=5.0.0"
+	},
+	"packageManager": "pnpm",
+	"github": {
+		"provider": "github",
+		"useGhCli": true,
+		"defaultBaseBranch": "main"
+	},
+	"editor": ["vscode", "cursor"]
+}
