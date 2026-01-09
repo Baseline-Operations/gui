@@ -9,7 +9,14 @@ const __dirname = dirname(__filename);
 
 export default tseslint.config(
 	{
-		files: ["eslint.config.js", "vitest.config.ts", "vite.config.ts", "electron/**/*.ts", "electron/**/*.js", "**/*.d.ts"],
+		files: [
+			"eslint.config.js",
+			"vitest.config.ts",
+			"vite.config.ts",
+			"electron/**/*.ts",
+			"electron/**/*.js",
+			"**/*.d.ts",
+		],
 		languageOptions: {
 			parserOptions: {},
 		},

@@ -1,5 +1,5 @@
 import { ipcMain } from "electron";
-import { ConfigManager } from "@baseline/core/config/manager.js";
+import { ConfigManager } from "@baseline/core/config/manager";
 
 /**
  * IPC handlers for config management
