@@ -5,7 +5,7 @@ node_modules/
 
 # Build outputs
 dist/
-packages/*/dist/
+electron/dist/
 *.tsbuildinfo
 
 # Environment
@@ -36,21 +36,6 @@ package-lock.json
 yarn.lock
 pnpm-lock.yaml
 
-# Root dependencies (packages have their own node_modules)
-node_modules/
-
-# Baseline workspace (runtime data)
-.baseline/
-!baseline.json
-!baseline.project.json
-packages/*/baseline.project.json
-
-# Editor workspace files (generated)
-workspace.code-workspace
-.cursor-workspace
-.idea/
-*.sublime-project
-
 # Test coverage
 coverage/
 .nyc_output/
@@ -58,4 +43,12 @@ coverage/
 # Temporary files
 *.tmp
 *.temp
-.backup/
+
+# Baseline workspace (runtime data)
+.baseline/
+!baseline.project.json
+
+# Monorepo structure (shouldn't be in GUI package)
+packages/
+pnpm-workspace.yaml
+baseline.json
