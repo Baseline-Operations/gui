@@ -1,5 +1,21 @@
 {
-	"packages": ["packages/core", "packages/cli", "packages/gui"],
+	"packages": [
+		{
+			"id": "core",
+			"location": "https://github.com/Baseline-Operations/core.git",
+			"version": "main"
+		},
+		{
+			"id": "cli",
+			"location": "https://github.com/Baseline-Operations/cli.git",
+			"version": "main"
+		},
+		{
+			"id": "gui",
+			"location": "https://github.com/Baseline-Operations/gui.git",
+			"version": "main"
+		}
+	],
 	"languages": {
 		"node": ">=20.0.0",
 		"typescript": ">=5.0.0"
